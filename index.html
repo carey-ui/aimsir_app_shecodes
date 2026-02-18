@@ -4,25 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather</title>
   </head>
   <body>
-    <h1>Welcome to our Weather App</h1>
+    <div class="myWeatherApp">
+      <h1>Welcome to our Weather App</h1>
       <form>
-      <div class="city">
-        <input type="text" name="city" id="" placeholder="Enter a city..." />
-        <input type="submit" value="Search" />
+        <div class="city">
+          <input type="text" name="city" id="" placeholder="Enter a city..." />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div class="Weather-Info">
+        <div>
+          <h2 class="current-city" id="current-city">Paris</h2>
+          <p class="current-details">
+            <span id="current-date"></span>,
+            <span id="description">moderate rain</span> <br />
+            Humidity: <strong id="humidity">87%</strong>, Wind:
+            <strong id="wind">7.2km/h</strong>
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">☀️</span>
+          <span class="current-temperature-value" id="temperature">24</span>
+          <span class="current-temperature-unit">°C</span>
+        </div>
       </div>
-    </form>
-    <h2>Galway</h2>
-    <div class="Weather-Info">
-      <div class="current">Sunday 14:00 Light Rain</div>
-      <div>Humidity: <strong>88%</strong> Wind: <strong> 24 km/h</strong></div>
-       <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span>
-            <span class="current-temperature-value">14</span>
-            <span class="current-temperature-unit">°C</span>
-          </div>
       <div class="temp">
         <span>🌧️</span>
         <div>
@@ -77,18 +86,21 @@
           </div>
         </div>
       </div>
-      <br>
-    <footer>
-      Coded by
-      <a href="https://github.com/carey-ui" target="_blank">Carey Faherty</a>,
-      is on
-      <a href="https://github.com/carey-ui/aimsir_app_shecodes" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://shecodesaimsirproject.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <br />
+      <footer>
+        Coded by
+        <a href="https://github.com/carey-ui" target="_blank">Carey Faherty</a>,
+        is on
+        <a
+          href="https://github.com/carey-ui/aimsir_app_shecodes"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://shecodesaimsirproject.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
