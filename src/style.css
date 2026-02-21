@@ -71,15 +71,15 @@ body {
 
 .current-temperature-value {
   position: relative;
-  font-size: 88px;
+  font-size: 75px;
   font-weight: bold;
-  top: 40px;
+  top: 10px;
 }
 
 .current-temperature-unit {
   font-size: 18px;
   position: relative;
-  top: -10px;
+  top: -35px;
 }
 
 footer {
