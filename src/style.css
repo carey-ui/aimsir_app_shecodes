@@ -4,17 +4,18 @@ body {
   padding: 30px;
 }
 .myWeatherApp {
-  background: #f6d2d2;
+  background: #f4d5d5;
   max-width: 600px;
-  margin: 60px auto;
+  margin: 45px auto;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  display: block;
 }
-/*h1 {
-  padding-bottom: 20px;
-  text-align: center;
-}*/
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 40px 0;
+}
 
 .search-input {
   background-color: #f9f7fe;

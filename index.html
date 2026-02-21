@@ -10,8 +10,8 @@
   </head>
   <body>
     <div class="myWeatherApp">
-      <form id="search-form">
-        <div class="city">
+      <header>
+        <form class="city" id="search-form">
           <input
             type="text"
             name="city"
@@ -20,8 +20,8 @@
             placeholder="Enter a city..."
           />
           <input type="submit" value="Search" class="search-button" />
-        </div>
-      </form>
+        </form>
+      </header>
       <div class="weather-info">
         <div>
           <h1 class="current-city" id="current-city"></h1>
@@ -44,60 +44,7 @@
           <span class="current-temperature-unit">°C</span>
         </div>
       </div>
-      <div class="temp">
-        <span>🌧️</span>
-        <div>
-          <span class="temperature">6</span>
-          <span class="unit">°C</span>
-        </div>
-      </div>
-      <div class="weatherforcast-row">
-        <div class="column">
-          <div class="preview">
-            <div class="title">Sun 🌧️</div>
-            <div class="forecast-temperature">
-              <span class="temp-max">11°C</span>
-              <span class="temp-min">3°C</span>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="preview">
-            <div class="title">Mon 🌧️</div>
-            <div class="forecast-temperature">
-              <span class="temp-max">9°C</span>
-              <span class="temp-min">7°C</span>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="preview">
-            <div class="title">Tue 🌧️</div>
-            <div class="forecast-temperature">
-              <span class="temp-max">8°C</span>
-              <span class="temp-min">7°C</span>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="preview">
-            <div class="title">Wed ☁️</div>
-            <div class="forecast-temperature">
-              <span class="temp-max">9°C</span>
-              <span class="temp-min">6°C</span>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="preview">
-            <div class="title">Thur ⛅</div>
-            <div class="forecast-temperature">
-              <span class="temp-max">8°C</span>
-              <span class="temp-min">5°C</span>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <br />
       <footer>
         Coded by
