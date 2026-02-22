@@ -1,5 +1,5 @@
 :root {
-  --bg-body: #f7f1e8;
+  --bg-body: #f3eee8;
   --bg-app: #f6d3d0;
   --text-main: #000000;
   --shadow: rgba(65, 50, 100, 0.08);
@@ -16,7 +16,7 @@ body {
   background-color: var(--bg-body);
   box-shadow: var(--shadow);
   font-family: sans-serif;
-  padding: 30px;
+  padding: 20px;
   transition: all 0.3s ease;
 }
 .myWeatherApp {
@@ -25,7 +25,7 @@ body {
   max-width: 600px;
   margin: 45px auto;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 30px 50px var(--shadow);
   display: block;
   transition: all 0.3s ease;
@@ -117,7 +117,7 @@ header {
 }
 
 .weather-forecast-icon {
-  font-size: 38px;
+  width: 100%;
   text-align: center;
 }
 
