@@ -53,3 +53,9 @@ let hours = String(now.getHours()).padStart(2, "0");
 let minutes = String(now.getMinutes()).padStart(2, "0");
 
 currentInput.innerHTML = `${day} ${hours}:${minutes}`;
+
+if (hours >= 20 || hours < 6) {
+  document.documentElement.setAttribute("data-theme", "dark");
+} else {
+  document.documentElement.removeAttribute("data-theme");
+}
