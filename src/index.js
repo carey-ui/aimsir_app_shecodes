@@ -16,6 +16,7 @@ function refreshWeather(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   humidityElement.innerHTML = `${humidity}%`;
   windElement.innerHTML = `${wind}kmph`;
+  getForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -30,8 +31,15 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
-  let days = ["Sun", "Mon", "Tues", "Wed", "Thurs"];
+function getForecast(city) {
+  let apiKey = "acbod87f7ctb68340e47b7b3abe9ae79";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unit=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri"];
   let forecastHTML = "";
 
   days.forEach(function (day) {
@@ -53,7 +61,6 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Dublin");
-displayForecast();
 
 let now = new Date();
 
