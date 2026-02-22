@@ -12,10 +12,10 @@ function refreshWeather(response) {
 
   cityElement.innerHTML = response.data.city;
   description.innerHTML = response.data.condition.description;
-  humidityElement.innerHTML = `${humidity}%`;
-  windElement.innerHTML = `${wind}kmph`;
   iconElement.setAttribute("src", iconUrl);
   temperatureElement.innerHTML = Math.round(temperature);
+  humidityElement.innerHTML = `${humidity}%`;
+  windElement.innerHTML = `${wind}kmph`;
 }
 
 function searchCity(city) {
